@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/child"
+        android:layout_width="wrap_content"
+        android:background="@drawable/square_rounded_shape_bg"
+        style="@style/TextThemeMediumJacarta"
+        android:padding="@dimen/dim_4"
+        tool:text="Poison"
+        android:layout_height="wrap_content"/>
+    <Space
+        android:layout_width="@dimen/dim_2"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

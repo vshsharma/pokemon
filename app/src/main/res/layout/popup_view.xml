@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/dim_300"
+    android:weightSum="1"
+    android:background="@color/jacarta">
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/TextThemeRoboto400"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_17"
+        android:layout_weight="0.9"
+        android:layout_marginEnd="@dimen/dim_10"
+        tools:text="@string/description" />
+
+    <ImageButton
+        android:id="@+id/close_button"
+        android:layout_weight="0.1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_17"
+        android:layout_marginBottom="@dimen/dim_30"
+        android:layout_marginEnd="@dimen/dim_20"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_close_white"/>
+
+</LinearLayout>

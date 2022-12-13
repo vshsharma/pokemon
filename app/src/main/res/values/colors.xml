@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    // app colors
+    <color name="normal">#DDCBD0</color>
+    <color name="fighting">#FCC1B0</color>
+    <color name="flying">#B2D2E8</color>
+    <color name="poison">#CFB7ED</color>
+    <color name="ground">#F4D1A6</color>
+    <color name="rock">#C5AEA8</color>
+    <color name="bug">#C1E0C8</color>
+    <color name="ghost">#D7C2D7</color>
+    <color name="steel">#C2D4CE</color>
+    <color name="fire">#EDC2C4</color>
+    <color name="water">#CBD5ED</color>
+    <color name="grass">#C0D4C8</color>
+    <color name="electric">#E2E2A0</color>
+    <color name="psychic">#DDC0CF</color>
+    <color name="ice">#C7D7DF</color>
+    <color name="dragon">#CADCDF</color>
+    <color name="dark">#C6C5E3</color>
+    <color name="fairy">#E4C0CF</color>
+    <color name="unknown">#CODFDD</color>
+    <color name="shadow">#CACACA</color>
+    <color name="jacarta">#2E3156</color>
+    <color name="dark_electric_blue">#5D5F7E</color>
+    <color name="robin_egg_blue">#12C9CC</color>
+    <color name="background">#DEEDED</color>
+    <color name="columbia_blue">#C9DDE2</color>
+    <color name="pastel_blue">#B0D2D2</color>
+    <color name="pewter_blue">#B29393</color>
+</resources>

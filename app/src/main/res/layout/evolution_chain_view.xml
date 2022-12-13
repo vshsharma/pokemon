@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/evolution_view"
+    android:padding="@dimen/dim_2"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dim_130">
+
+    <FrameLayout
+        android:id="@+id/dotted_view"
+        android:layout_width="@dimen/dim_100"
+        android:layout_height="@dimen/dim_120"
+        android:padding="@dimen/dim_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/dotted_border">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_view"
+        android:padding="@dimen/dim_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pokedex_image"
+        android:layout_width="@dimen/dim_100"
+        android:layout_height="@dimen/dim_100"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/pokemon_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src= "@drawable/ic_pokemon"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/next_arrow"
+        android:visibility="gone"
+        android:contentDescription="@string/next_arrow"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_10"
+        app:layout_constraintStart_toEndOf="@+id/dotted_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/ic_next_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

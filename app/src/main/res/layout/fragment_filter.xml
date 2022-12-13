@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dim_20"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_10">
+
+            <ImageButton
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/close"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/filterTitle"
+                style="@style/TextThemeLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                android:fontFamily="@font/roboto"
+                android:letterSpacing="0.06"
+                android:text="@string/filters" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterTitle"
+                android:layout_marginTop="@dimen/dim_5"
+                android:minHeight="@dimen/dim_1"
+                app:dividerColor="@color/dark_electric_blue"
+                app:dividerThickness="@dimen/dim_1" />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerView"
+            android:layout_margin="@dimen/dim_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/types_filter"
+                    layout="@layout/filter_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    android:id="@+id/gender_filter"
+                    layout="@layout/filter_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ctaView"
+            android:layout_marginTop="@dimen/dim_5"
+            android:minHeight="@dimen/dim_1"
+            app:dividerColor="@color/dark_electric_blue"
+            app:dividerThickness="@dimen/dim_2" />
+
+        <LinearLayout
+            android:id="@+id/ctaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/resetButton"
+                style="@style/TextThemeBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_10"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_corners_secondary"
+                android:text="@string/reset"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/applyButton"
+                style="@style/TextThemeBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dim_10"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_corners_primary"
+                android:text="@string/apply"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
